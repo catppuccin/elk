@@ -1,12 +1,13 @@
 /* ==UserStyle== 
 @name           Elk Catppuccin
 @namespace      github.com/catppuccin/elk
-@version        0.0.1
+@version        0.1.0
 @description    Soothing pastel theme for Elk
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/elk/raw/main/catppuccin.user.css
 @preprocessor   stylus
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha"]
+@var select accent "Accent color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
 ==/UserStyle== */
 
 @-moz-document domain("elk.zone") {
@@ -133,9 +134,52 @@
       $shadow = #010409;
   }
 
+  if (accent=="Rosewater") {
+    $accent = $rosewater;
+  }
+  else if (accent=="Flamingo") {
+    $accent = $flamingo;
+  }
+  else if (accent=="Pink") {
+    $accent = $pink;
+  }
+  else if (accent=="Mauve") {
+    $accent = $mauve;
+  }
+  else if (accent=="Red") {
+    $accent = $red;
+  }
+  else if (accent=="Maroon") {
+    $accent = $maroon;
+  }
+  else if (accent=="Peach") {
+    $accent = $peach;
+  }
+  else if (accent=="Yellow") {
+    $accent = $yellow;
+  }
+  else if (accent=="Green") {
+    $accent = $green;
+  }
+  else if (accent=="Teal") {
+    $accent = $teal;
+  }
+  else if (accent=="Sky") {
+    $accent = $sky;
+  }
+  else if (accent=="Sapphire") {
+    $accent = $sapphire;
+  }
+  else if (accent=="Blue") {
+    $accent = $blue;
+  }
+  else if (accent=="Lavender") {
+    $accent = $lavender;
+  }
+
   :root {
-    --c-primary: $blue;
-    --c-primary-active: lighten($blue, 10%);
+    --c-primary: $accent;
+    --c-primary-active: lighten($accent, 10%);
     --c-primary-light: $surface0;
     --c-border: $surface0;
     --c-border-dark: $surface1;
@@ -143,7 +187,7 @@
     --c-bg-base-rgb: red($mantle), green($mantle), blue($mantle);
     --c-bg-active: $base;
     --c-bg-code: $surface0;
-    --c-bg-selection: $blue;
+    --c-bg-selection: $accent;
     --c-bg-fade: $surface0;
     --c-text-base: $text;
     --c-text-code: $rosewater;
