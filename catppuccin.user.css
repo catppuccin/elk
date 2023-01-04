@@ -1,7 +1,7 @@
 /* ==UserStyle== 
 @name           Elk Catppuccin
 @namespace      github.com/catppuccin/elk
-@version        0.1.0
+@version        0.1.1
 @description    Soothing pastel theme for Elk
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/elk/raw/main/catppuccin.user.css
@@ -223,5 +223,13 @@
   
   [text-yellow], [hover^="text-yellow"]:hover {
     color: rgbA(red($yellow), green($yellow), blue($yellow), var(--un-text-opacity));
+  }
+  
+  [text-purple], [hover^="text-purple"]:hover {
+    color: rgbA(red($lavender), green($lavender), blue($lavender), var(--un-text-opacity));
+  }
+  
+  [group-hover^="bg-purple/10"]:hover {
+    background-color: alpha($lavender, 0.1);
   }
 }
