@@ -1,7 +1,7 @@
 /* ==UserStyle== 
 @name           Elk Catppuccin
 @namespace      github.com/catppuccin/elk
-@version        0.1.1
+@version        0.1.2
 @description    Soothing pastel theme for Elk
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/elk/raw/main/catppuccin.user.css
@@ -199,6 +199,10 @@
     --c-success: $green;
     --c-warning: $yellow;
     --c-error: $red;
+  }
+  
+  .btn-solid, [btn-solid=""] {
+    color: var(--c-bg-base);
   }
   
   ::-webkit-scrollbar-thumb {
