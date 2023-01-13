@@ -1,7 +1,7 @@
 /* ==UserStyle== 
 @name           Elk Catppuccin
 @namespace      github.com/catppuccin/elk
-@version        0.1.2
+@version        0.1.3
 @description    Soothing pastel theme for Elk
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/elk/raw/main/catppuccin.user.css
@@ -183,9 +183,9 @@
     --c-primary-light: $surface0;
     --c-border: $surface0;
     --c-border-dark: $surface1;
-    --c-bg-base: $mantle;
+    --c-bg-base: $base;
     --c-bg-base-rgb: red($mantle), green($mantle), blue($mantle);
-    --c-bg-active: $base;
+    --c-bg-active: $surface0;
     --c-bg-code: $surface0;
     --c-bg-selection: $accent;
     --c-bg-fade: $surface0;
@@ -199,6 +199,10 @@
     --c-success: $green;
     --c-warning: $yellow;
     --c-error: $red;
+  }
+  
+  ::selection {
+    color: white;
   }
   
   .btn-solid, [btn-solid=""] {
