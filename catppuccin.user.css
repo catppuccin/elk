@@ -240,4 +240,7 @@
   [group-hover^="bg-purple/10"]:hover {
     background-color: alpha($lavender, 0.1);
   }
+  .bg-dm {
+    background-color: $mantle;
+  }
 }
