@@ -241,6 +241,6 @@
     background-color: alpha($lavender, 0.1);
   }
   .bg-dm {
-    background-color: $mantle;
+    background-color: $surface0;
   }
 }
